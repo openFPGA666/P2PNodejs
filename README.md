@@ -15,3 +15,7 @@ curl -H "Content-type:application/json" --data "{\"peer\" : \"ws://localhost:600
 
 #view Peers
 curl http://localhost:3001/addPeer 
+
+#operations
+curl -H "Content-type:application/json" --data "" http://localhost:3001/numAdd
+curl http://localhost:3001/getNum
