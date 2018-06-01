@@ -3,7 +3,6 @@
 P2PNodejs--this is a smiple example which based on nodejs realize the P2P network
 
 ### Quick start
-(set up two connected nodes and mine 1 block)
 ```
 npm install
 HTTP_PORT=3001 P2P_PORT=6001 npm start
@@ -13,7 +12,6 @@ curl -H "Content-type:application/json" --data '{"peer" : "ws://localhost:6001"}
 set HTTP_PORT=3001  set P2P_PORT=6001 npm start
 set HTTP_PORT=3002 set P2P_PORT=6002  npm start
 curl -H "Content-type:application/json" --data "{\"peer\" : \"ws://localhost:6001\"}" http://localhost:3001/addPeer
-```
 
 #view Peers
-curl  http://localhost:3001/Peers
+curl http://localhost:3001/addPeer 
